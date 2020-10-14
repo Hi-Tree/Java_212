@@ -1,4 +1,4 @@
-public static class Pen{
+public class Pen{
     private float price;
     private String color;
 
