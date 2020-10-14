@@ -19,8 +19,17 @@ public class Question3 {
             }
         
             else{
+                String[] split = dial.split(" ");
+                if(split.length == 1){
                 arr[k] = dial;
                 k++;
+                }
+                else{
+                    for(int h = 0; h < split.length; h++){
+                        arr[k] = split[h];
+                        k++;
+                    }
+                }
             }
         }
         }
