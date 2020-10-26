@@ -5,7 +5,7 @@ public class Question1 {
             throw new IllegalArgumentException("You must enter 2 arguments");
         }
         for(int i = 0; i < args.length; i++){
-            if(Character.isDigit(args[i].charAt(args.length))){
+            if(Character.isDigit(args[i].charAt(args[i].length-1))){
                endsWithDigit++;
             }
         }
