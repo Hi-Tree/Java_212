@@ -59,9 +59,16 @@ public class LinkedList {
 	 */
 	public void prepend(String d) {
 		ListNode newNode = new ListNode(d);
+		if(first.next == null){
+			first.next = newNode;
+			last = newNode;
+			length++;
+		}
+		else{
 		newNode.next = first.next;
 		first.next = newNode;
 		length++;
+		}
 
 	} // method append(String)
 
