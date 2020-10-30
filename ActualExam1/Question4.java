@@ -10,6 +10,9 @@ public class Pen{
         color = colo;
     }
     public void setPrice(float pri){
+        if(pri < 0.0f){
+            throw new IllegalArgumentException("Price cannot be negative.");
+        }
         price = pri;
     }
     public void setColor(String col){
